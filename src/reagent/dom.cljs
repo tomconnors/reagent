@@ -7,8 +7,6 @@
             [reagent.debug :refer-macros [dbg]]
             [reagent.interop :refer-macros [$ $!]]))
 
-(defonce ^:private imported nil)
-
 (defonce ^:private roots (atom {}))
 
 (defn- unmount-comp [container]
